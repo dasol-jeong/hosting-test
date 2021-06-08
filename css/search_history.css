@@ -1,0 +1,104 @@
+:root {
+  --body-background-color: #f5f6f7;
+  --font-color: #4e4e4e;
+  --border-gray-color: #dadada;
+  --main-blue-color: #3498db;
+  --main-blue-border-color: #2693db;
+  --main-blue-second-color: #ddf1ff;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+.history_whole_delete_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+.history_whole_delete_btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.history_whole_delete_btn a:hover {
+  color: #9b9898;
+}
+.search_content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px #d1d1d1;
+  width: 600px;
+  /* min-width: rem; */
+  max-width: 410px;
+  height: 130px;
+  margin: 0 0 25px 0;
+  padding: 15px;
+  font-size: 1.5rem;
+  color: #4b4a4a;
+  font-weight: 600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.dlt_btn {
+  position: absolute;
+  right: 7px;
+  top: 10px;
+}
+.dlt_btn > i {
+  color: #9b9898;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+.search_content p {
+  color: #4e4e4e;
+  display: flex;
+}
+.history_section_wrap {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+}
+.history_section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.history_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.history_button button {
+  font-size: 1em;
+  border-radius: 7px;
+  color: white;
+  padding: 10px 10px;
+  background-color: var(--main-blue-color);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.history_button button:hover {
+  background-color: rgba(34, 54, 97, 0.705);
+  transition: all 0.3s;
+}
+.fa-trash-alt:hover {
+  color: red;
+}
+@media all and (max-width: 479px) {
+  .search_content {
+    max-width: 90%;
+    font-size: 1.1rem;
+  }
+}
